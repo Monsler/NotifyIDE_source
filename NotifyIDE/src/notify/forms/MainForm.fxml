@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520" prefWidth="592" styleClass="">
+  <children>
+    <Panel AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="-2" AnchorPane.topAnchor="0" backgroundColor="#333333" borderColor="#c0c0c0" borderRadius="0" borderStyle="NONE" borderWidth="1" focusTraversable="false" id="panel" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="120" prefWidth="594" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <TextField AnchorPane.leftAnchor="-1" AnchorPane.rightAnchor="1" alignment="CENTER_LEFT" editable="true" focusTraversable="false" id="edit" layoutX="0" layoutY="24" prefColumnCount="12" prefHeight="32" prefWidth="640" promptText="Путь к скрипту" styleClass="text-input text-field " text="">
+          <font>
+            <Font name="Consolas" size="13"/>
+          </font>
+        </TextField>
+        <Data cursor="DEFAULT" enabled="1" id="data-edit" visible="1"/>
+        <Button AnchorPane.leftAnchor="-1" AnchorPane.rightAnchor="1" AnchorPane.topAnchor="55" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button" layoutX="0" layoutY="56" prefHeight="40" prefWidth="640" styleClass="button " text="Перейти" textAlignment="CENTER" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </Button>
+        <Data cursor="HAND" enabled="1" id="data-button" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+    <TabPaneEx AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="96" focusTraversable="false" id="tabPane" layoutX="0" layoutY="96" prefHeight="424" prefWidth="592" side="BOTTOM" styleClass="tab-pane " tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Редактор">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="402" prefWidth="592" styleClass="">
+              <children>
+                <TextArea AnchorPane.bottomAnchor="-5" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" editable="true" focusTraversable="false" id="textArea" layoutX="0" layoutY="0" prefColumnCount="40" prefHeight="400" prefWidth="592" promptText="" styleClass="text-input text-area " text="&lt;?php&#10;//NotifyIDE main script&#10;alert(&quot;Hello, world!&quot;);&#10;app::close();" wrapText="false">
+                  <font>
+                    <Font name="Consolas" size="16"/>
+                  </font>
+                </TextArea>
+                <Data cursor="DEFAULT" enabled="1" id="data-textArea" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Управление">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="402" prefWidth="592" styleClass="">
+              <children>
+                <Panel AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" backgroundColor="#666666" borderColor="#c0c0c0" borderRadius="0" borderStyle="NONE" borderWidth="1" focusTraversable="false" id="panelAlt" layoutX="0" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="402" prefWidth="592" styleClass="" titleColor="#dcdcdc" titleOffset="15" titlePosition="TOP_LEFT">
+                  <children/>
+                  <titleFont>
+                    <Font name="System Regular" size="12"/>
+                  </titleFont>
+                </Panel>
+                <Button AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="128" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button7" layoutX="8" layoutY="128" prefHeight="32" prefWidth="624" styleClass="button " text="Удалить скрипт" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Button AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="8" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="buttonAlt" layoutX="8" layoutY="8" prefHeight="32" prefWidth="624" styleClass="button " text="Сохранить открытый скрипт" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="HAND" enabled="1" id="data-buttonAlt" visible="1"/>
+                <Button AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="48" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button3" layoutX="8" layoutY="48" prefHeight="32" prefWidth="624" styleClass="button " text="Запустить программу" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-button3" visible="1"/>
+                <Button AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="88" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="button4" layoutX="8" layoutY="88" prefHeight="32" prefWidth="624" styleClass="button " text="Новый скрипт" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-button4" visible="1"/>
+                <TextField AnchorPane.bottomAnchor="33" AnchorPane.leftAnchor="8" alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="editAlt" layoutX="8" layoutY="344" prefColumnCount="12" prefHeight="25" prefWidth="288" promptText="Имя скрипта" styleClass="text-input text-field " text="">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </TextField>
+                <Data cursor="DEFAULT" enabled="1" id="data-editAlt" visible=""/>
+                <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
+                <Button AnchorPane.bottomAnchor="7" AnchorPane.leftAnchor="8" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button5" layoutX="8" layoutY="370" prefHeight="24" prefWidth="144" styleClass="button " text="Создать" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-button5" visible=""/>
+                <Button AnchorPane.bottomAnchor="7" AnchorPane.leftAnchor="152" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button6" layoutX="152" layoutY="370" prefHeight="24" prefWidth="144" styleClass="button " text="Отмена" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-button6" visible=""/>
+                <Data cursor="DEFAULT" enabled="1" id="data-button7" visible="1"/>
+                <Data content="delscript" cursor="DEFAULT" enabled="1" id="data-fragment" visible=""/>
+                <Button AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="168" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button9" layoutX="8" layoutY="168" prefHeight="32" prefWidth="576" styleClass="button " text="Распаковать архив" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-button9" visible="1"/>
+                <Button AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="208" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button10" layoutX="8" layoutY="208" prefHeight="32" prefWidth="576" styleClass="button " text="Собрать в архив" textAlignment="CENTER" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </Button>
+                <Data cursor="DEFAULT" enabled="1" id="data-button10" visible="1"/>
+                <FragmentPane AnchorPane.bottomAnchor="2" AnchorPane.leftAnchor="0" alignment="CENTER" focusTraversable="false" id="fragment" layoutX="0" layoutY="256" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="144" prefWidth="312" spacing="0" styleClass="fragment-pane "/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="О программе">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="402" prefWidth="592" styleClass="">
+              <children>
+                <LabelEx AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="16" alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="8" layoutY="16" prefHeight="40" prefWidth="624" styleClass="label " text="NotifyIDE" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="Consolas" size="34"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+                <LabelEx AnchorPane.bottomAnchor="35" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="11.494140625" AnchorPane.topAnchor="64" alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="8" layoutY="64" prefHeight="320" prefWidth="576" styleClass="label " text="NotifyIDE - интегрированная среда разработки, предназначенная для новичков и любителей. Все программы пишутся на PHP, а он очень быстр и лёгок. " textAlignment="LEFT" underline="false" wrapText="true">
+                  <font>
+                    <Font name="Consolas" size="17"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+                <FlatButton AnchorPane.bottomAnchor="3" AnchorPane.leftAnchor="8" alignment="CENTER" borderRadius="202" color="#666666" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#4d4d4d" id="button8" layoutX="8" layoutY="375" prefHeight="24" prefWidth="152" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </FlatButton>
+                <Data cursor="DEFAULT" enabled="" id="data-button8" visible="1"/>
+                <LabelEx AnchorPane.bottomAnchor="3" AnchorPane.leftAnchor="8" alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="" focusTraversable="false" graphicTextGap="4" id="label3" layoutX="8" layoutY="375" prefHeight="24" prefWidth="152" styleClass="label " text="MiaSoft (c) 2022 | Build 357" textAlignment="LEFT" underline="false" wrapText="false">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </LabelEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+                <ImageViewEx AnchorPane.bottomAnchor="3" AnchorPane.rightAnchor="3" autoSize="false" centered="false" focusTraversable="false" height="56" id="image" layoutX="533" layoutY="343" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="56">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/DevelNext_Logo.png" visible="1"/>
+                <ImageViewEx AnchorPane.bottomAnchor="2" AnchorPane.rightAnchor="64" autoSize="false" centered="false" focusTraversable="false" height="56" id="imageAlt" layoutX="472" layoutY="344" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="56">
+                  <font>
+                    <Font name="System Regular" size="12"/>
+                  </font>
+                </ImageViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/backgrounder (1).png" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPaneEx>
+    <Data cursor="HAND" draggable="NONE" enabled="1" id="data-tabPane" visible="1"/>
+  </children>
+</AnchorPane>

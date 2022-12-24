@@ -1,0 +1,63 @@
+{
+  "props": [],
+  "components": {
+    "fileChooser": {
+      "type": "script\\FileChooserScript",
+      "x": 672,
+      "y": 240,
+      "props": {
+        "saveDialog": true,
+        "initialDirectory": "C:/",
+        "initialFileName": "project.nfp",
+        "filterName": ".nfp",
+        "filterExtensions": "*nfp.*",
+        "filterAny": "0",
+        "inputNode": "",
+        "actionNode": ""
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 448,
+      "y": 144,
+      "props": {
+        "interval": 1,
+        "repeatable": "1",
+        "autoStart": "1"
+      }
+    },
+    "zipFile": {
+      "type": "bundle\\zip\\ZipFileScript",
+      "x": 224,
+      "y": 128,
+      "props": {
+        "path": "project.nfp",
+        "autoCreate": "1"
+      }
+    },
+    "dirChooser": {
+      "type": "script\\DirectoryChooserScript",
+      "x": 128.0,
+      "y": 80.0,
+      "props": {
+        "title": "Выберите папку для сборки",
+        "initialDirectory": "C:/",
+        "inputNode": "",
+        "actionNode": ""
+      }
+    },
+    "fileChooserAlt": {
+      "type": "script\\FileChooserScript",
+      "x": 528,
+      "y": 64,
+      "props": {
+        "initialFileName": "project.nfp",
+        "filterName": ".nfp",
+        "filterExtensions": "*.nfp*",
+        "filterAny": true,
+        "inputNode": "",
+        "actionNode": ""
+      }
+    }
+  }
+}

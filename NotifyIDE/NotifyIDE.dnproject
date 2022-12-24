@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project author="chebu" authorOS="Windows 10" createdAt="1671129180214" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="NotifyIDE" packageName="notify" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1671805171930">
+  <tree>
+    <expanded>
+    <path src=""/>
+      <path src="/build"/>
+      <path src="/build/dist"/>
+      <path src="/Data"/>
+      <path src="/src"/>
+      <path src="/src/.data"/>
+      <path src="/src/.data/img"/>
+      <path src="/src/.theme"/>
+      <path src="/src/notify"/>
+      <path src="/src/notify/forms"/>
+      <path src="/src/notify/modules"/>
+    </expanded>
+  </tree>
+  <openedFiles>
+  <file src="NotifyIDE.dnproject"/>
+    <file src="src/notify/modules/MainModule.php"/>
+    <file selected="1" src="src/notify/forms/MainForm.php"/>
+    <file src="src/notify/forms/delscript.php"/>
+    <file src="src/notify/forms/rep.php"/>
+  </openedFiles>
+  <files/>
+  <behaviours>
+  <behaviour class="ide\project\behaviours\BundleProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\PhpProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\JavaPlatformBehaviour"/>
+    <behaviour class="ide\project\behaviours\GuiFrameworkProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\RunBuildProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\ShareProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\BackupProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\GradleProjectBehaviour"/>
+  </behaviours>
+</project>
